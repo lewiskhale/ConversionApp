@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert the Selected: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="25dp"
+        android:id="@+id/selected"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the amount"
+        android:id="@+id/userAmount"
+        android:layout_toRightOf="@+id/selected"
+        android:inputType="numberDecimal"
+        android:text="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Units From: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/selected"
+        android:id="@+id/convertFrom"
+        android:layout_marginRight="100dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/metric_from"
+        android:layout_toRightOf="@+id/convertTo"
+        android:layout_below="@+id/userAmount"
+        android:layout_marginTop="35dp"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Units To: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/convertFrom"
+        android:id="@+id/convertTo"
+        android:layout_marginRight="100dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/metric_to"
+        android:layout_below="@+id/metric_from"
+        android:layout_toRightOf="@+id/convertTo"
+        android:layout_marginTop="35dp"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertTo"
+        android:hint="Amount shown here"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:id="@+id/outputText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputText"
+        android:id="@+id/unitsId"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<resources>
+    <string-array name="conversion_types">
+        <item>grams</item>
+        <item>kilograms</item>
+        <item>ounces</item>
+        <item>pounds</item>
+        <item>stones</item>
+    </string-array>
+</resources>
